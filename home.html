@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!--Font stuff-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <h2><a href="index.html">Spaceum</a></h2>
+      <div>
+        <a href="">Link 1</a>
+        <a href="">Link 2</a>
+        <a href="login.html">Login</a>
+      </div>
+    </nav>
+    <main>
+      <div id="home-page">
+        <div id="user-list"></div>
+      </div>
+    </main>
+    <footer>
+      <p>All rights reserved (R)</p>
+    </footer>
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDZLaJUJtKFvJ7T73GpiSfJk3FDTS0CiGk",
+        authDomain: "webb4-7e924.firebaseapp.com",
+        projectId: "webb4-7e924",
+        storageBucket: "webb4-7e924.appspot.com",
+        messagingSenderId: "510404114841",
+        appId: "1:510404114841:web:f38414d4bef12e5101bb08",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>

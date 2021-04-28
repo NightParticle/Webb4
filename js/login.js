@@ -28,6 +28,7 @@ function SubmitUser() {
         name: username,
         email: email,
         password: password,
+        profilePicture: "none",
       })
       .then(() => {
         console.log("Document successfully written!");
