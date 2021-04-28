@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!--Font stuff-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <h2><a href="index.html">Spaceum</a></h2>
+      <div>
+        <a href="">Link 1</a>
+        <a href="">Link 2</a>
+        <a href="login.html">Login</a>
+      </div>
+    </nav>
+    <main>
+      <form id="create-account" autocomplete="off">
+        <h2>Create your account &#128203</h2>
+        <div>
+          <label for="create-username">Username</label>
+          <input type="text" name="create-username" id="create-username" required />
+          <label for="create-email">Email</label>
+          <input type="email" name="create-email" id="create-email" required />
+          <label for="create-password">Password</label>
+          <input type="password" name="create-password" id="create-password" required />
+          <label for="confirm-password">Confirm password</label>
+          <input type="password" name="confirm-password" id="confirm-password" required />
+          <input type="button" value="Create Account" onclick="SubmitUser()" id="submit-create-account">
+          <br>
+          <label for="have-account">Already have an account?</label>
+          <input type="button" name="have-account" value="Switch to login" onclick="SwitchLogin()">
+        </div>
+      </form>
+     <form id="login" autocomplete="off">
+       <h2>Login</h2>
+       <div>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        <input type="button" value="Login" onclick="SubmitLogin()" id="submit-login">
+        <br>
+        <label for="no-account">Wanna create an account?</label>
+        <input type="button" value="Switch to Create account" name="no-account" onclick="SwitchLogin()">
+      </div>
+     </form>
+    </main>
+    <footer>
+      <p>All rights reserved (R)</p>
+    </footer>
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDZLaJUJtKFvJ7T73GpiSfJk3FDTS0CiGk",
+        authDomain: "webb4-7e924.firebaseapp.com",
+        projectId: "webb4-7e924",
+        storageBucket: "webb4-7e924.appspot.com",
+        messagingSenderId: "510404114841",
+        appId: "1:510404114841:web:f38414d4bef12e5101bb08",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="js/login.js"></script>
+    
+  </body>
+</html>

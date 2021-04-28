@@ -92,3 +92,36 @@ h1 {
     margin-right: 10vw;
   }
 }
+
+#create-account,
+#login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--grey);
+  margin: 50px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#create-account h2,
+#login h2 {
+  font-size: 35px;
+  text-align: center;
+}
+
+#create-account div,
+#login div {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#create-account input,
+#login input {
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: black;
+}
