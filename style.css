@@ -126,6 +126,15 @@ h1 {
   color: black;
 }
 
+#user-list {
+  overflow: auto;
+  height: 50vh;
+}
+
+#home-page h2 {
+  margin: 20px;
+}
+
 .user-preview {
   display: flex;
   flex-direction: row;
@@ -150,4 +159,29 @@ h1 {
 #home-page {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
+}
+
+#create-post {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+#create-post button {
+  color: black;
+  margin-top: 10px;
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+textarea {
+  color: black;
+  outline: none;
+  border: none;
+  padding: 20px;
+  resize: none;
+  box-sizing: border-box;
+  width: 50%;
 }

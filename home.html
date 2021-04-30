@@ -20,13 +20,25 @@
       <h2><a href="index.html">Spaceum</a></h2>
       <div>
         <a href="">Link 1</a>
-        <a href="">Link 2</a>
+        <a href="home.html">Home</a>
         <a href="login.html">Login</a>
       </div>
     </nav>
     <main>
       <div id="home-page">
-        <div id="user-list"></div>
+        <div id="user-list">
+          <h2>Users &#128101</h2>
+        </div>
+        <div id="home-main">
+          <div id="create-post">
+            <h2>Share something with the world!</h2>
+            <textarea name="post-text" id="post-text" cols="30" rows="3"></textarea>
+            <button onclick="CreatePost()">Post</button>
+          </div>
+          <div id="feed">
+            <h2>Feed</h2>
+          </div>
+        </div>
       </div>
     </main>
     <footer>

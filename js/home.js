@@ -22,3 +22,8 @@ db.collection("users")
           "</h3></div>";
     });
   });
+
+function CreatePost() {
+  let text = document.getElementById("post-text").value;
+  let user = "TestUser";
+}
