@@ -26,7 +26,7 @@ db.collection("users")
         userList.innerHTML +=
           '<div class="user-preview" onClick="OpenDM(\'' +
           doc.data().name +
-          '\')"><img src="img/default-picture.png" /><h3>' +
+          '\')"><img src="img/default-picture.png" alt="default profile picture" /><h3>' +
           doc.data().name +
           "</h3></div>";
     });
@@ -42,7 +42,7 @@ db.collection("posts")
       // doc.data() is never undefined for query doc snapshots
 
       feed.innerHTML +=
-        '<div class="post-normal"><div><img src="img/default-picture.png" /> <p>' +
+        '<div class="post-normal"><div><img src="img/default-picture.png" alt="default profile picture"/> <p>' +
         doc.data().user +
         "</div><p>" +
         doc.data().text +
@@ -81,7 +81,7 @@ function CreatePost() {
         // doc.data() is never undefined for query doc snapshots
 
         feed.innerHTML +=
-          '<div class="post-normal"><div><img src="img/default-picture.png" /> <p>' +
+          '<div class="post-normal"><div><img src="img/default-picture.png" alt="default profile picture"/> <p>' +
           doc.data().user +
           "</div><p>" +
           doc.data().text +
@@ -164,7 +164,7 @@ function OpenDM(target) {
               let msgHistory = doc.data().msg;
 
               if (msgHistory[0] != undefined) {
-                for (let i = 0; i < msgHistory.length; i++) {
+                for (let i = 0; i < msgHistory.length / 2; i++) {
                   if (msgHistory[i].user == localStorage.getItem("loggedIn")) {
                     document.getElementById("chat").innerHTML +=
                       "<p class='msg-me'>" + msgHistory[i].content + "</p>";
