@@ -17,9 +17,8 @@
   </head>
   <body>
     <nav>
-      <h2><a href="index.html">Spaceum</a></h2>
+      <h2><a href="index.html">Spacebook</a></h2>
       <div>
-        <a href="">Link 1</a>
         <a href="home.html">Home</a>
         <a href="login.html">Login</a>
       </div>
@@ -37,7 +36,20 @@
           </div>
           <div id="feed">
             <h2>Feed</h2>
+            <div id="feed"></div>
           </div>
+        </div>
+      </div>
+      <div id="dm">
+        <div id="top-menu"><h2 id="dm-h2">TEST</h2> <button onclick="Close()">X</button></div>
+        
+        <div id="chat">
+          <p class="msg-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, expedita?</p>
+          <p class="msg-other">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio mollitia voluptas ullam!</p>
+        </div>
+        <div id="msg">
+          <input type="text" id="user-msg">
+          <button onclick="SendMsg()">Send</button>
         </div>
       </div>
     </main>

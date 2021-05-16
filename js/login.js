@@ -70,6 +70,7 @@ function SubmitLogin() {
       if (doc.exists) {
         if (doc.data().password == password) {
           // Login
+          localStorage.setItem("loggedIn", username);
         }
       } else {
         // doc.data() will be undefined in this case
